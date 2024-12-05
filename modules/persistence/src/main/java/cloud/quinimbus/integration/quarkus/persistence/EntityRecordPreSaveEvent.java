@@ -4,5 +4,5 @@ import cloud.quinimbus.persistence.api.lifecycle.EntityDiffEvent;
 import cloud.quinimbus.persistence.api.lifecycle.diff.Diff;
 import java.util.Set;
 
-public record EntityRecordPostSaveEvent<T extends Record>(T entity, Set<Diff<Object>> diffs)
+public record EntityRecordPreSaveEvent<T extends Record>(T entity, Set<Diff<Object>> diffs)
         implements EntityDiffEvent {}
