@@ -8,5 +8,5 @@ module cloud.quinimbus.integration.quarkus.persistence {
     requires jakarta.annotation;
     requires jakarta.cdi;
     requires jakarta.inject;
-    requires quarkus.core;
+    requires io.quarkus.core;
 }
